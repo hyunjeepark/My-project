@@ -10,30 +10,51 @@ import com.exntu.impl.BasicFunction;
 
 public class Phone implements BasicFunction{
 	
-	List<Button> btnlist;
-	List<Camera> cameralist;
-	Display dp;
-	
-	public void makePhone() {	
-		btnlist = new ArrayList<>();
-		cameralist = new ArrayList<>();
-		dp = new Display();
+	protected List<Button> buttonList;
+	protected List<Camera> cameraList;
+	protected Display display;
+
+
+	public Phone(){ }
+
+	public void uniqueFn(String phoneName) {
+		call(phoneName);
+		sendSMS(phoneName);
+		internet(phoneName);
 	}
 
 	@Override
-	public void call() {
-		System.out.println("��ȭ���OK");	
+	public void call(String phoneName) {
+		if(phoneName.equals("Galaxy")){
+			System.out.println("영상통화, 음성통화 가능");
+		}else if(phoneName.equals("Iphone")){
+			System.out.println("facetime, 음성통화 가능");
+		}else{
+
+		}
+
 	}
 
 	@Override
-	public void sendSMS() {
-		System.out.println("���ڱ��OK");		
+	public void sendSMS(String phoneName) {
+		if(phoneName.equals("Galaxy")){
+			System.out.println("메세지 가능");
+		}else if(phoneName.equals("Iphone")){
+			System.out.println("imessage 가능");
+		}else{
+
+		}
 	}
 
 	@Override
-	public void internet() {
-		System.out.println("���ͳݱ��OK");		
-	}
-	
+	public void internet(String phoneName) {
+		if(phoneName.equals("Galaxy")){
+			System.out.println("Google 지원");
+		}else if(phoneName.equals("Iphone")){
+			System.out.println("Safari 지원");
+		}else{
 
+		}
+
+	}
 }

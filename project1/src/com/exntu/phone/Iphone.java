@@ -9,7 +9,7 @@ import com.exntu.impl.Payment;
 
 public class Iphone extends Phone implements Payment {
 	
-	@Override
+	/*@Override
 	public void makePhone() {
 
 		btnlist = new ArrayList<>();
@@ -20,10 +20,10 @@ public class Iphone extends Phone implements Payment {
 		System.out.println("버튼  "+btnlist.size()+"개 생성");
 		
 		cameralist = new ArrayList<>();
-		cameralist.add(new Camera(20, "normal"));
-		cameralist.add(new Camera(2, "longterm"));
+		cameralist.add(new Camera(20, Camera.LensType.FRONT));
+		cameralist.add(new Camera(2, Camera.LensType.REAR));
 		System.out.println("카메라 "+ cameralist.size()+"개 생성");
-		
+
 		dp = new Display(50, true);
 		if(dp.isPower()) {
 			System.out.println("디스플레이 생성");
@@ -38,7 +38,7 @@ public class Iphone extends Phone implements Payment {
 		
 		System.out.println("아이폰 핸드폰 생성완료");
 
-	}
+	}*/
 
 	@Override
 	public void payment() {
