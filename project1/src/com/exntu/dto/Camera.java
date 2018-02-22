@@ -6,12 +6,10 @@ public class Camera {
 	private String lens;
 
 	public void takePhoto() {
-		System.out.println("»çÁø Âï±â");
+		System.out.println("ì‚¬ì§„ì°ê¸°");
 	}
-	public void savePhoto() {
-		System.out.println("ÀÚµ¿ »çÁø ÀúÀå");
-	}
-	
+	public void savePhoto() { System.out.println("ìë™ ì‚¬ì§„ ì €ì¥");}
+
 	public Camera(int size, String lens) {
 		this.size = size;
 		this.lens = lens;

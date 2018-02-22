@@ -9,7 +9,7 @@ public class Button {
 		super();
 		this.size = size;
 		this.color = color;
-		//System.out.println("¹öÆ°" + count + "°³ »ý¼º");
+		//System.out.println("ï¿½ï¿½Æ°" + count + "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 	}
 
 	

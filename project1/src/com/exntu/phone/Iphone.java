@@ -17,18 +17,18 @@ public class Iphone extends Phone implements Payment {
 		btnlist.add(new Button(20, "white"));
 		btnlist.add(new Button(15, "blue"));
 		btnlist.add(new Button(20, "white"));
-		System.out.println("¹öÆ°  "+btnlist.size()+"°³ »ı¼º");
+		System.out.println("ë²„íŠ¼  "+btnlist.size()+"ê°œ ìƒì„±");
 		
 		cameralist = new ArrayList<>();
 		cameralist.add(new Camera(20, "normal"));
 		cameralist.add(new Camera(2, "longterm"));
-		System.out.println("Ä«¸Ş¶ó "+ cameralist.size()+"°³ »ı¼º");
+		System.out.println("ì¹´ë©”ë¼ "+ cameralist.size()+"ê°œ ìƒì„±");
 		
 		dp = new Display(50, true);
 		if(dp.isPower()) {
-			System.out.println("µğ½ºÇÃ·¹ÀÌ »ı¼º");
+			System.out.println("ë””ìŠ¤í”Œë ˆì´ ìƒì„±");
 		}else {
-			System.out.println("µğ½ºÇÃ·¹ÀÌ°¡ ²¨Á®ÀÖ½À´Ï´Ù");
+			System.out.println("ë””ìŠ¤í”Œë ˆì´ êº¼ì ¸ìˆìŠµë‹ˆë‹¤.");
 		}
 		
 		call();
@@ -36,13 +36,13 @@ public class Iphone extends Phone implements Payment {
 		internet();
 		payment();
 		
-		System.out.println("¾ÆÀÌÆù ÇÚµåÆùÀ» »ı¼ºÇÏ¿´½À´Ï´Ù.");
+		System.out.println("ì•„ì´í° í•¸ë“œí° ìƒì„±ì™„ë£Œ");
 
 	}
 
 	@Override
 	public void payment() {
-		System.out.println("¾ÖÇÃÆäÀÌ OK");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ OK");
 		
 	}
 

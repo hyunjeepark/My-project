@@ -15,7 +15,7 @@ public class MainClass {
 		
 		String num;
 		
-		System.out.println("ÇÚµåÆù »ı¼ºÇÏ½Ã°Ú½À´Ï±î?");
+		System.out.println("í•¸ë“œí°ì„ ìƒì„±í•˜ì‹œê² ìŠµë‹ˆê¹Œ?");
 		System.out.println("Galaxy : 1  / IPhone : 2");
 		num = sc.nextLine();
 		
@@ -24,7 +24,7 @@ public class MainClass {
 		}else if(num.equals("2")) {
 			iphone.makePhone();
 		}else{
-			System.out.println("1 ÀÌ³ª 2¹øÀ» ´­·¯ÁÖ¼¼¿ä.");
+			System.out.println("1 ë˜ëŠ” 2ë¥¼ ëˆŒëŸ¬ì£¼ì„¸ìš”.");
 		}
 
 
